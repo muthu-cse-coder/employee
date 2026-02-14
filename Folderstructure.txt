@@ -1,0 +1,187 @@
+📦 riserone-ems (RiserOne Employee Management System)
+│
+├── 📄 index.html                          # Entry HTML file
+├── 📄 package.json                        # Dependencies & scripts  
+├── 📄 vite.config.js                      # Vite configuration
+├── 📄 .gitignore                          # Git ignore rules
+├── 📄 .env.example                        # Environment variables template
+│
+├── 📘 README.md                           # Main documentation
+├── 📘 SETUP_GUIDE.md                      # Detailed setup guide
+├── 📘 PROJECT_STRUCTURE.md                # Project structure visualization
+├── 📘 QUICK_REFERENCE.md                  # Developer quick reference
+│
+├── 📁 public/                             # Static assets (for Phase 2)
+│
+└── 📁 src/                                # Source code directory
+    │
+    ├── 📄 main.jsx                        # ✅ React entry point
+    ├── 📄 App.jsx                         # ✅ Main app component with routing
+    │
+    ├── 📁 assets/                         # Static resources
+    │   │
+    │   ├── 📁 styles/                     # CSS files
+    │   │   ├── 📄 global.css             # ✅ Global styles & design system
+    │   │   └── 📄 auth.css               # ✅ Authentication page styles
+    │   │
+    │   └── 📁 images/                     # 🔜 Images & icons (Phase 2)
+    │
+    ├── 📁 components/                     # React components
+    │   │
+    │   ├── 📁 auth/                       # ✅ Authentication components
+    │   │   ├── 📄 Login.jsx              # ✅ Login page component
+    │   │   └── 📄 ProtectedRoute.jsx     # ✅ Route protection HOC
+    │   │
+    │   ├── 📁 common/                     # 🔜 Shared components (Phase 2)
+    │   │   ├── 📄 Header.jsx             # 🔜 Header with user menu
+    │   │   ├── 📄 Sidebar.jsx            # 🔜 Sidebar navigation
+    │   │   ├── 📄 Card.jsx               # 🔜 Reusable card component
+    │   │   ├── 📄 Button.jsx             # 🔜 Custom button component
+    │   │   ├── 📄 Modal.jsx              # 🔜 Modal component
+    │   │   ├── 📄 Toast.jsx              # 🔜 Toast notifications
+    │   │   ├── 📄 Loader.jsx             # 🔜 Loading spinner
+    │   │   └── 📄 Table.jsx              # 🔜 Data table component
+    │   │
+    │   ├── 📁 employee/                   # 🔜 Employee-specific components
+    │   │   ├── 📄 DashboardCards.jsx     # 🔜 Dashboard stat cards
+    │   │   ├── 📄 AttendanceCard.jsx     # 🔜 Attendance widget
+    │   │   ├── 📄 LeaveForm.jsx          # 🔜 Leave application form
+    │   │   ├── 📄 SalarySlipCard.jsx     # 🔜 Salary slip preview
+    │   │   └── 📄 ChatWidget.jsx         # 🔜 Chat interface
+    │   │
+    │   └── 📁 admin/                      # 🔜 Admin-specific components
+    │       ├── 📄 EmployeeTable.jsx      # 🔜 Employee data table
+    │       ├── 📄 PayrollTable.jsx       # 🔜 Payroll management
+    │       ├── 📄 AnalyticsCharts.jsx    # 🔜 Charts & graphs
+    │       └── 📄 LeaveApprovalCard.jsx  # 🔜 Leave approval widget
+    │
+    ├── 📁 pages/                          # Page components (Routes)
+    │   │
+    │   ├── 📁 employee/                   # Employee pages
+    │   │   ├── 📄 Dashboard.jsx          # ✅ Employee dashboard (placeholder)
+    │   │   ├── 📄 Profile.jsx            # 🔜 Profile management page
+    │   │   ├── 📄 Attendance.jsx         # 🔜 Attendance tracking page
+    │   │   ├── 📄 SalarySlip.jsx         # 🔜 Salary slip viewer
+    │   │   ├── 📄 Leave.jsx              # 🔜 Leave management page
+    │   │   ├── 📄 Chat.jsx               # 🔜 Chat system page
+    │   │   └── 📄 Notifications.jsx      # 🔜 Notifications page
+    │   │
+    │   └── 📁 admin/                      # Admin pages
+    │       ├── 📄 Dashboard.jsx          # ✅ Admin dashboard (placeholder)
+    │       ├── 📄 Employees.jsx          # 🔜 Employee management
+    │       ├── 📄 Attendance.jsx         # 🔜 Attendance management
+    │       ├── 📄 Payroll.jsx            # 🔜 Payroll processing
+    │       ├── 📄 LeaveApproval.jsx      # 🔜 Leave approval system
+    │       ├── 📄 Reports.jsx            # 🔜 Reports & analytics
+    │       └── 📄 Settings.jsx           # 🔜 System settings
+    │
+    ├── 📁 context/                        # React Context (State Management)
+    │   ├── 📄 AuthContext.jsx            # ✅ Authentication state
+    │   └── 📄 ThemeContext.jsx           # 🔜 Theme management (Phase 2)
+    │
+    ├── 📁 services/                       # 🔜 API service layer (Phase 2)
+    │   ├── 📄 api.js                     # 🔜 Axios instance configuration
+    │   ├── 📄 authService.js             # 🔜 Authentication API calls
+    │   ├── 📄 employeeService.js         # 🔜 Employee API calls
+    │   ├── 📄 attendanceService.js       # 🔜 Attendance API calls
+    │   ├── 📄 payrollService.js          # 🔜 Payroll API calls
+    │   └── 📄 leaveService.js            # 🔜 Leave API calls
+    │
+    ├── 📁 utils/                          # 🔜 Utility functions (Phase 2)
+    │   ├── 📄 validators.js              # 🔜 Form validation functions
+    │   ├── 📄 formatters.js              # 🔜 Data formatting utilities
+    │   ├── 📄 constants.js               # 🔜 Application constants
+    │   ├── 📄 helpers.js                 # 🔜 Helper functions
+    │   └── 📄 dateUtils.js               # 🔜 Date/time utilities
+    │
+    └── 📁 config/                         # Configuration files
+        ├── 📄 api.config.js              # 🔜 API endpoints configuration
+        └── 📄 app.config.js              # 🔜 App-wide configuration
+
+
+═══════════════════════════════════════════════════════════════════════
+
+LEGEND:
+  ✅  = Implemented in Phase 1 (COMPLETED)
+  🔜  = Coming in Phase 2/3 (PLANNED)
+  📦  = Root directory
+  📁  = Folder/Directory
+  📄  = File
+  📘  = Documentation file
+
+═══════════════════════════════════════════════════════════════════════
+
+CURRENT FILE COUNT:
+  Total Files Created: 15
+  
+  ✅ Implemented:
+     • 1  - HTML entry point
+     • 1  - Vite config
+     • 1  - Package.json
+     • 2  - React components (main.jsx, App.jsx)
+     • 3  - Auth components (Login, ProtectedRoute, AuthContext)
+     • 2  - Dashboard placeholders (Employee, Admin)
+     • 2  - CSS files (global, auth)
+     • 3  - Config files (.gitignore, .env.example)
+     
+  📘 Documentation:
+     • README.md
+     • SETUP_GUIDE.md
+     • PROJECT_STRUCTURE.md
+     • QUICK_REFERENCE.md
+
+═══════════════════════════════════════════════════════════════════════
+
+FOLDER STRUCTURE BREAKDOWN:
+
+📦 Root Level (8 files)
+   ├── Configuration files (3)
+   ├── Documentation files (4)
+   └── Entry point (1)
+
+📁 src/ (Source Code)
+   ├── 📁 assets/styles/ (2 CSS files) ✅
+   ├── 📁 components/auth/ (2 components) ✅
+   ├── 📁 context/ (1 context) ✅
+   ├── 📁 pages/employee/ (1 page) ✅
+   ├── 📁 pages/admin/ (1 page) ✅
+   └── Root files (2) ✅
+
+🔜 Phase 2 Additions (Planned):
+   ├── 📁 components/common/ (8+ components)
+   ├── 📁 components/employee/ (5+ components)
+   ├── 📁 components/admin/ (4+ components)
+   ├── 📁 pages/employee/ (6 more pages)
+   ├── 📁 pages/admin/ (6 more pages)
+   ├── 📁 services/ (6 service files)
+   └── 📁 utils/ (5 utility files)
+
+═══════════════════════════════════════════════════════════════════════
+
+TECHNOLOGY STACK:
+
+Frontend Framework:     React 18
+Routing:               React Router DOM v6
+State Management:      React Context API
+Build Tool:            Vite
+Styling:               Custom CSS (No frameworks)
+Icons:                 React Icons
+Animations:            CSS3 + Framer Motion
+HTTP Client:           Axios (ready)
+Charts:                Recharts (ready)
+
+═══════════════════════════════════════════════════════════════════════
+
+NEXT PHASE OVERVIEW:
+
+Phase 2 will add:
+  • 20+ new components
+  • 12+ new pages
+  • 6 API services
+  • 5 utility modules
+  • Advanced features (Chat, Notifications, AI Chatbot)
+
+Estimated additional files: 40+
+Total project files (Phase 2): 55+
+
+═══════════════════════════════════════════════════════════════════════

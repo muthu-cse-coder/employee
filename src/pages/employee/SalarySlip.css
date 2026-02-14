@@ -1,0 +1,334 @@
+.salary-slip-page {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Summary Cards */
+.salary-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.summary-card {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: center;
+  padding: var(--spacing-xl);
+}
+
+.summary-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  flex-shrink: 0;
+  background: var(--gradient-primary);
+  color: var(--white);
+}
+
+.summary-card.gross .summary-icon {
+  background: linear-gradient(135deg, #00D9FF 0%, #7B68EE 100%);
+}
+
+.summary-card.deductions .summary-icon {
+  background: linear-gradient(135deg, #FF6B9D 0%, #FF8C42 100%);
+}
+
+.summary-details {
+  flex: 1;
+}
+
+.summary-label {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  margin: 0 0 var(--spacing-xs) 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary-amount {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0 0 var(--spacing-xs) 0;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.summary-card.net .summary-amount {
+  color: var(--white);
+  background: none;
+  -webkit-text-fill-color: var(--white);
+}
+
+.summary-period {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+}
+
+.summary-card.net .summary-period {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Content Grid */
+.salary-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+/* Breakdown Section */
+.breakdown-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.breakdown-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.breakdown-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 var(--spacing-md) 0;
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--border-color);
+  font-size: 1.1rem;
+}
+
+.earnings-title {
+  color: var(--success);
+  border-bottom-color: var(--success);
+}
+
+.deductions-title {
+  color: var(--error);
+  border-bottom-color: var(--error);
+}
+
+.net-title {
+  color: var(--gold-primary);
+  border-bottom-color: var(--gold-primary);
+}
+
+.breakdown-total {
+  font-weight: 700;
+}
+
+.breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+}
+
+.breakdown-label {
+  color: var(--text-secondary);
+}
+
+.breakdown-amount {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.breakdown-amount.deduction {
+  color: var(--error);
+}
+
+.breakdown-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: var(--spacing-xl) 0;
+}
+
+/* Total Section */
+.breakdown-total-section {
+  background: var(--bg-tertiary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.breakdown-total-amount {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+}
+
+.payment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-md);
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.payment-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.payment-date {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+}
+
+/* Payment History Table */
+.payment-history-table-wrapper {
+  overflow-x: auto;
+}
+
+.payment-history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payment-history-table thead {
+  background: var(--bg-tertiary);
+}
+
+.payment-history-table th {
+  padding: var(--spacing-md) var(--spacing-lg);
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.payment-history-table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.payment-history-table tbody tr:hover {
+  background: var(--bg-tertiary);
+}
+
+.payment-history-table td {
+  padding: var(--spacing-md) var(--spacing-lg);
+  color: var(--text-secondary);
+}
+
+.net-amount {
+  color: var(--gold-primary);
+  font-size: 1.1rem;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-badge.paid {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.status-badge.pending {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}
+
+.btn-download-small {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--gradient-primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  font-size: 0.95rem;
+}
+
+.btn-download-small:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .salary-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .salary-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .summary-amount {
+    font-size: 2rem;
+  }
+
+  .payment-history-table {
+    font-size: 0.875rem;
+  }
+
+  .payment-history-table th,
+  .payment-history-table td {
+    padding: var(--spacing-sm);
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .page-header button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .summary-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .summary-amount {
+    font-size: 1.75rem;
+  }
+
+  .breakdown-total-amount {
+    font-size: 1.5rem;
+  }
+}
