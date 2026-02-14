@@ -33,7 +33,7 @@ function Profile() {
     bio: 'Passionate software developer with expertise in modern web technologies.',
     skills: ['React', 'Node.js', 'Python', 'MongoDB'],
     languages: ['English', 'Hindi'],
-    website: 'https://johndoe.dev'
+    website: 'https://muthu-cse-coder.github.io/Portfolio/'
   });
 
   const handleChange = (e) => {

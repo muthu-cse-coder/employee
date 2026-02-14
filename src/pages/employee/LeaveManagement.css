@@ -35,7 +35,7 @@
 .form-group input,
 .form-group select,
 .form-group textarea {
-  padding: var(--spacing-md);
+  /* padding: var(--spacing-md); */
   border: 2px solid var(--border-color);
   border-radius: var(--radius-md);
   background: var(--bg-tertiary);
