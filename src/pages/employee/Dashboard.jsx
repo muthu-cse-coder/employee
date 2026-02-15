@@ -1,19 +1,3 @@
-// import { useAuth } from '../../context/AuthContext';
-
-// function EmployeeDashboard() {
-//   const { user } = useAuth();
-
-//   return (
-//     <div style={{ padding: '2rem' }}>
-//       <h1>Employee Dashboard</h1>
-//       <p>Welcome, {user?.name}!</p>
-//       <p>This is a placeholder for the employee dashboard. Full implementation coming in Phase 2.</p>
-//     </div>
-//   );
-// }
-
-// export default EmployeeDashboard;
-
 import { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import Layout from '../../components/common/Layout';
@@ -42,7 +26,7 @@ import {
   ResponsiveContainer,
   Legend
 } from 'recharts';
-import './EmployeeDashboard.css';
+import './Employeedashboard.css';
 
 function EmployeeDashboard() {
   const { user } = useAuth();
