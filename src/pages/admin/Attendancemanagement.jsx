@@ -14,7 +14,7 @@ import {
   FaUser
 } from 'react-icons/fa';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import './AttendanceManagement.css';
+import './Attendancemanagement.css';
 
 function AttendanceManagement() {
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
