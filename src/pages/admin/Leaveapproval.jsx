@@ -12,7 +12,7 @@ import {
   FaCalendarAlt,
   FaExclamationTriangle
 } from 'react-icons/fa';
-import './LeaveApproval.css';
+import './Leaveapproval.css';
 
 function LeaveApproval() {
   const [filterStatus, setFilterStatus] = useState('all');

@@ -13,7 +13,7 @@ import {
   FaUser
 } from 'react-icons/fa';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import './PayrollManagement.css';
+import './Payrollmanagement.css';
 
 function PayrollManagement() {
   const [selectedMonth, setSelectedMonth] = useState('2024-02');
