@@ -13,7 +13,7 @@ import {
   FaKey,
   FaMobileAlt
 } from 'react-icons/fa';
-import './EmployeeSettings.css';
+import './Employeesettings.css';
 
 function EmployeeSettings() {
   const { user } = useAuth();
