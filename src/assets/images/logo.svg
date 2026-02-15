@@ -1,0 +1,37 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="premiumGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B38728;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#FBF5B7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#FBF5B7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#AA771C;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="whiteGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur" />
+      <feFlood flood-color="white" flood-opacity="0.7" />
+      <feComposite in2="blur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#whiteGlow)">
+    <path d="M180,210 L180,430 L265,430 L265,340 L350,430 L435,430 L330,315 C380,290 380,210 270,210 Z" 
+          fill="url(#premiumGold)" />
+    
+    <rect x="210" y="170" width="14" height="40" fill="url(#premiumGold)" />
+    <rect x="235" y="150" width="14" height="60" fill="url(#premiumGold)" />
+    <rect x="260" y="130" width="14" height="80" fill="url(#premiumGold)" />
+    <rect x="285" y="115" width="14" height="95" fill="url(#premiumGold)" />
+    <rect x="310" y="125" width="14" height="85" fill="url(#premiumGold)" />
+
+    <path d="M130,300 C140,180 250,120 325,110" 
+          fill="none" stroke="url(#premiumGold)" stroke-width="10" stroke-linecap="round" />
+    <circle cx="130" cy="300" r="10" fill="url(#premiumGold)" />
+    <circle cx="325" cy="110" r="10" fill="url(#premiumGold)" />
+  </g>
+</svg>
