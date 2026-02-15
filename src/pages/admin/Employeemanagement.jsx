@@ -14,7 +14,7 @@ import {
   FaSave,
   FaUserCircle
 } from 'react-icons/fa';
-import './EmployeeManagement.css';
+import './Employeemanagement.css';
 
 function EmployeeManagement() {
   const [searchQuery, setSearchQuery] = useState('');
