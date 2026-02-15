@@ -11,7 +11,7 @@ import Chat from './pages/employee/Chat';
 import Notifications from './pages/employee/Notifications';
 import AdminDashboard from './pages/admin/Dashboard';
 import EmployeeManagement from './pages/admin/Employeemanagement';
-import LeaveApproval from './pages/admin/LeaveApproval';
+import LeaveApproval from './pages/admin/Leaveapproval';
 import AttendanceManagement from './pages/admin/Attendancemanagement';
 import PayrollManagement from './pages/admin/Payrollmanagement';
 import ReportsAnalytics from './pages/admin/ReportsAnalytics';
