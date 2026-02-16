@@ -84,10 +84,10 @@ function Login() {
           <div className="brand-section">
             {/* ✅ SVG Logo */}
             <div className="brand-logo">
-              <img src={logo} alt="RiserOne Logo" className="logo-image" />
+              {/* <img src={logo} alt="RiserOne Logo" className="logo-image" /> */}
             </div>
             
-            <h1 className="brand-title">RiserOne</h1>
+            <h1 className="brand-title">Test</h1>
             <p className="brand-subtitle">Employee Management System</p>
             
             <p className="brand-description">
